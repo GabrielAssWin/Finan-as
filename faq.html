@@ -3,65 +3,90 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FAQ - Finanças</title>
+  <title>Fórum - Finans</title>
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
+  
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-
-  <!-- Estilo customizado -->
-  <link rel="stylesheet" type="text/css" href="css/estilo.css">
+  
   <!-- Estilos Personalizados -->
   <style>
     body {
       background-color: #f7f7f7;
-      font-family: Arial, sans-serif;
+      font-family: 'Roboto', sans-serif;
+      margin-top: 50px;
     }
 
-    .faq-section {
-      margin-top: 100px;
+    .forum-section {
       padding: 40px 20px;
     }
 
-    .faq-header {
-      color: #007bff;
+    .forum-header {
+      color: #0d141c;
       font-weight: bold;
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 2rem;
     }
 
     .card {
-      border: none;
-      margin-bottom: 15px;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+      background-color: #fff;
     }
 
     .card-header {
-      background-color: #007bff;
-      color: rgb(0, 0, 0);
-      font-size: 18px;
+      background-color: #ffc107;
+      color: #fff;
+      font-size: 1.25rem;
+      border-bottom: none;
+      padding: 20px;
+    }
+
+    .card-body {
+      padding: 20px;
+    }
+
+    .btn-primary {
+      background-color: #ffcc00;
+      border: none;
       border-radius: 5px;
+      padding: 10px 20px;
     }
 
-    .btn-link {
-      text-decoration: none;
-      font-size: 16px;
-      color: white;
+    .btn-primary:hover {
+      background-color: #ffcc10;
     }
 
-    .btn-link:hover {
-      color: #f7f7f7;
+    .card-body p {
+      font-size: 1rem;
+      color: #555;
     }
 
     footer {
-      background-color: #343A40;
-      color: white(0, 0, 0);
-      
+      background-color: black;
+      color: white;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    footer a {
+      color: #ffc107;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
+
   <!-- Cabeçalho -->
   <header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
       <div class="container">
         <a href="#" class="navbar-brand"><img src="img/logo.png" alt="Finans Logo" width="120"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
@@ -73,10 +98,6 @@
             <li class="nav-item"><a href="recursos.html" class="nav-link">Recursos</a></li>
             <li class="nav-item"><a href="faq.html" class="nav-link">FAQ</a></li>
             <li class="nav-item"><a href="forum.html" class="nav-link">Fórum</a></li>
-            <li class="nav-item"><a href="beneficios.html" class="nav-link">Benefícios</a></li>
-            <li class="nav-item"><a href="quiz.html" class="nav-link">Quiz</a></li>
-            <li class="nav-item"><a href="calc.html" class="nav-link">Calculadora</a></li>
-            <li class="nav-item"><a href="guia.html" class="nav-link">Guia</a></li>
             <li class="nav-item"><a href="cadastro.html" class="btn btn-primary ml-3">Cadastre-se</a></li>
           </ul>
         </div>
@@ -84,79 +105,48 @@
     </nav>
   </header>
 
-  <!-- Seção FAQ -->
-  <main class="container faq-section">
-    <h1 class="text-center faq-header mb-4">Perguntas Frequentes</h1>
-    <div id="faqAccordion" class="accordion">
-      <!-- Pergunta 1 -->
-      <div class="card">
-        <div class="card-header" id="faqHeading1">
-          <h5 class="mb-0">
-            <button class="btn btn-link" data-toggle="collapse" data-target="#faq1" aria-expanded="true" aria-controls="faq1">
-              O que é o Finans?
-            </button>
-          </h5>
-        </div>
-        <div id="faq1" class="collapse show" aria-labelledby="faqHeading1" data-parent="#faqAccordion">
-          <div class="card-body">
-            Finans é uma plataforma projetada para ajudar você a gerenciar suas finanças de forma inteligente e segura. Oferecemos ferramentas para organização financeira pessoal e empresarial.
-          </div>
-        </div>
-      </div>
+  <!-- Seção Fórum -->
+  <main class="container forum-section">
+    <h1 class="forum-header">Fórum de Discussão</h1>
+    <div class="text-right mb-3">
+      <a href="#" class="btn btn-primary">Criar Novo Tópico</a>
+    </div>
 
-      <!-- Pergunta 2 -->
-      <div class="card">
-        <div class="card-header" id="faqHeading2">
-          <h5 class="mb-0">
-            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#faq2" aria-expanded="false" aria-controls="faq2">
-              O Finans é gratuito?
-            </button>
-          </h5>
-        </div>
-        <div id="faq2" class="collapse" aria-labelledby="faqHeading2" data-parent="#faqAccordion">
-          <div class="card-body">
-            Sim! Oferecemos uma versão gratuita com funcionalidades essenciais. Para recursos avançados, há opções de planos pagos.
-          </div>
-        </div>
+    <!-- Tópicos -->
+    <div class="card">
+      <div class="card-header">
+        <h5>Título do Tópico 1</h5>
       </div>
-
-      <!-- Pergunta 3 -->
-      <div class="card">
-        <div class="card-header" id="faqHeading3">
-          <h5 class="mb-0">
-            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#faq3" aria-expanded="false" aria-controls="faq3">
-              É seguro usar o Finans?
-            </button>
-          </h5>
-        </div>
-        <div id="faq3" class="collapse" aria-labelledby="faqHeading3" data-parent="#faqAccordion">
-          <div class="card-body">
-            Absolutamente. Usamos criptografia avançada para proteger seus dados e seguimos as melhores práticas de segurança.
-          </div>
-        </div>
+      <div class="card-body">
+        <p>Discussão sobre as melhores práticas para gerenciamento financeiro. <a href="#" class="btn btn-link">Ler mais</a></p>
+        <small class="text-muted">Criado por Usuário123 em 02/12/2024</small>
       </div>
+    </div>
 
-      <!-- Pergunta 4 -->
-      <div class="card">
-        <div class="card-header" id="faqHeading4">
-          <h5 class="mb-0">
-            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#faq4" aria-expanded="false" aria-controls="faq4">
-              Como faço para criar uma conta?
-            </button>
-          </h5>
-        </div>
-        <div id="faq4" class="collapse" aria-labelledby="faqHeading4" data-parent="#faqAccordion">
-          <div class="card-body">
-            Basta clicar no botão "Cadastre-se" no topo da página e preencher o formulário com suas informações.
-          </div>
-        </div>
+    <div class="card">
+      <div class="card-header">
+        <h5>Título do Tópico 2</h5>
+      </div>
+      <div class="card-body">
+        <p>Dicas e truques para economizar no final do mês. <a href="#" class="btn btn-link">Ler mais</a></p>
+        <small class="text-muted">Criado por Usuário456 em 01/12/2024</small>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <h5>Título do Tópico 3</h5>
+      </div>
+      <div class="card-body">
+        <p>Discussão sobre os melhores investimentos para iniciantes. <a href="#" class="btn btn-link">Ler mais</a></p>
+        <small class="text-muted">Criado por Usuário789 em 30/11/2024</small>
       </div>
     </div>
   </main>
 
   <!-- Rodapé -->
-  <footer class="text-center py-3">
-    <p>&copy; 2024 Finans. Todos os direitos reservados.</p>
+  <footer>
+    <p>&copy; 2024 Finans. Todos os direitos reservados. <a href="#">Política de Privacidade</a></p>
   </footer>
 
   <!-- Scripts -->
