@@ -16,7 +16,7 @@
     .resource-header {
       margin-top: 100px;
       text-align: center;
-      color: #007bff;
+      color: #000000;
     }
 
     .resource-container {
@@ -28,15 +28,34 @@
       border-radius: 10px;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
       transition: transform 0.3s ease;
+      display: flex;
+      flex-direction: column;
     }
 
     .card:hover {
       transform: translateY(-5px);
     }
 
+    .card-img-top {
+      height: 200px;
+      object-fit: cover;
+    }
+
     .card-title {
       font-weight: bold;
-      color: #007bff;
+      color: #ffcc00;
+    }
+
+    /* Estilo para o botão "Acessar" */
+    .btn-primary {
+      background-color: #ffcc00; /* Cor de fundo amarela */
+      border-color: #ffcc00; /* Cor da borda amarela */
+      color: #fff; /* Cor do texto branco */
+    }
+
+    .btn-primary:hover {
+      background-color: #e6b800; /* Cor de fundo amarela mais escura */
+      border-color: #e6b800; /* Cor da borda amarela mais escura */
     }
 
     footer {
@@ -76,23 +95,22 @@
   <!-- Conteúdo Principal -->
   <main class="container resource-container">
     <h1 class="resource-header">Recursos Exclusivos da Finans</h1>
-    <div class="row mt-4">
+    <div class="row mt-4 d-flex align-items-stretch">
       <!-- Recurso 1 -->
-      <div class="col-md-4">
+      <div class="col-md-4 mb-4">
         <div class="card">
-          <img src="img/recursos/calculadora.jpg" class="card-img-top" alt="Calculadora Financeira">
+          <img src="https://via.placeholder.com/300" class="card-img-top" alt="Calculadora Financeira">
           <div class="card-body">
             <h5 class="card-title">Calculadora Financeira</h5>
             <p class="card-text">Faça cálculos de juros compostos, projeções financeiras e mais com nossa ferramenta prática.</p>
-            <a href="calculadora.html" class="btn btn-primary">Acessar</a>
+            <a href="calc.html" class="btn btn-primary">Acessar</a>
           </div>
         </div>
       </div>
-
       <!-- Recurso 2 -->
-      <div class="col-md-4">
+      <div class="col-md-4 mb-4">
         <div class="card">
-          <img src="img/recursos/quiz.jpg" class="card-img-top" alt="Quiz Financeiro">
+          <img src="https://via.placeholder.com/300" class="card-img-top" alt="Quiz Financeiro">
           <div class="card-body">
             <h5 class="card-title">Quiz Financeiro</h5>
             <p class="card-text">Teste seus conhecimentos financeiros e aprenda a tomar decisões mais inteligentes.</p>
@@ -100,11 +118,10 @@
           </div>
         </div>
       </div>
-
       <!-- Recurso 3 -->
-      <div class="col-md-4">
+      <div class="col-md-4 mb-4">
         <div class="card">
-          <img src="img/recursos/educacao.jpg" class="card-img-top" alt="Educação Financeira">
+          <img src="https://via.placeholder.com/300" class="card-img-top" alt="Educação Financeira">
           <div class="card-body">
             <h5 class="card-title">Educação Financeira</h5>
             <p class="card-text">Acesse artigos, vídeos e cursos para melhorar sua saúde financeira e planejar seu futuro.</p>
@@ -114,11 +131,11 @@
       </div>
     </div>
 
-    <div class="row mt-4">
+    <div class="row mt-4 d-flex align-items-stretch">
       <!-- Recurso 4 -->
-      <div class="col-md-4">
+      <div class="col-md-4 mb-4">
         <div class="card">
-          <img src="img/recursos/forum.jpg" class="card-img-top" alt="Fórum">
+          <img src="https://via.placeholder.com/300" class="card-img-top" alt="Fórum">
           <div class="card-body">
             <h5 class="card-title">Fórum</h5>
             <p class="card-text">Participe de discussões sobre finanças, compartilhe dicas e tire dúvidas com outros usuários.</p>
@@ -126,11 +143,10 @@
           </div>
         </div>
       </div>
-
       <!-- Recurso 5 -->
-      <div class="col-md-4">
+      <div class="col-md-4 mb-4">
         <div class="card">
-          <img src="img/recursos/planejamento.jpg" class="card-img-top" alt="Planejamento">
+          <img src="https://via.placeholder.com/300" class="card-img-top" alt="Planejamento Pessoal">
           <div class="card-body">
             <h5 class="card-title">Planejamento Pessoal</h5>
             <p class="card-text">Crie metas financeiras personalizadas e acompanhe seu progresso com nossa plataforma.</p>
@@ -138,11 +154,10 @@
           </div>
         </div>
       </div>
-
       <!-- Recurso 6 -->
-      <div class="col-md-4">
+      <div class="col-md-4 mb-4">
         <div class="card">
-          <img src="img/recursos/indicadores.jpg" class="card-img-top" alt="Indicadores">
+          <img src="https://via.placeholder.com/300" class="card-img-top" alt="Indicadores Financeiros">
           <div class="card-body">
             <h5 class="card-title">Indicadores Financeiros</h5>
             <p class="card-text">Acompanhe indicadores econômicos e entenda como eles impactam suas finanças.</p>
