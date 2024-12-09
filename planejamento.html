@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Planejamento Pessoal - Finans</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Estilos Personalizados -->
+  <style>
+    body {
+      background-color: #f7f7f7;
+      font-family: Arial, sans-serif;
+    }
+
+    .header {
+      margin-top: 100px;
+      text-align: center;
+      color: #000000;
+    }
+
+    .content-container {
+      margin-top: 50px;
+    }
+
+    .card {
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card-img-top {
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-title {
+      font-weight: bold;
+      color: #ffcc00;
+    }
+
+    .btn-primary {
+      background-color: #ffcc00;
+      border-color: #ffcc00;
+      color: #fff;
+    }
+
+    .btn-primary:hover {
+      background-color: #e6b800;
+      border-color: #e6b800;
+    }
+
+    footer {
+      background-color: black;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    .progress {
+      height: 20px;
+    }
+
+    .progress-bar {
+      background-color: #ffcc00;
+    }
+  </style>
+</head>
+<body>
+  <!-- Cabeçalho -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
+      <div class="container">
+        <a href="index.html" class="navbar-brand"><img src="img/logo.png" alt="Finans Logo" width="120"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+            <li class="nav-item"><a href="cadastro.html" class="nav-link">Cadastre-se</a></li>
+            <li class="nav-item"><a href="Quiz.html" class="nav-link">Quiz</a></li>
+            <li class="nav-item"><a href="beneficios.html" class="nav-link">Benefícios</a></li>
+            <li class="nav-item"><a href="faq.html" class="nav-link">FAQ</a></li>
+            <li class="nav-item"><a href="calc.html" class="nav-link">Calculadora</a></li>
+            <li class="nav-item"><a href="forum.html" class="nav-link">Fórum</a></li>
+            <li class="nav-item"><a href="guia.html" class="nav-link">Guia</a></li>
+            <li class="nav-item"><a href="recursos.html" class="nav-link">Recursos</a></li>
+            <li class="nav-item"><a href="planejamento.html" class="nav-link active">Planejamento Pessoal</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Conteúdo Principal -->
+  <main class="container content-container">
+    <h1 class="header">Planeje suas Metas Financeiras</h1>
+    <div class="row mt-4">
+      <!-- Seção de Metas -->
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Crie Suas Metas</h5>
+            <p class="card-text">Estabeleça metas financeiras personalizadas para alcançar sua estabilidade financeira.</p>
+            <form>
+              <div class="form-group">
+                <label for="goalTitle">Título da Meta</label>
+                <input type="text" class="form-control" id="goalTitle" placeholder="Ex: Economizar para viagem">
+              </div>
+              <div class="form-group">
+                <label for="goalAmount">Valor da Meta (R$)</label>
+                <input type="number" class="form-control" id="goalAmount" placeholder="Ex: 5000">
+              </div>
+              <div class="form-group">
+                <label for="goalDeadline">Prazo (meses)</label>
+                <input type="number" class="form-control" id="goalDeadline" placeholder="Ex: 12">
+              </div>
+              <button type="submit" class="btn btn-primary">Salvar Meta</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mt-4">
+      <!-- Metas Acompanhadas -->
+      <div class="col-md-12">
+        <h4>Metas Atuais</h4>
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Meta: Economizar para Viagem</h5>
+            <p class="card-text">Valor: R$5000 | Prazo: 12 meses</p>
+            <div class="progress mb-3">
+              <div class="progress-bar" style="width: 40%" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">40%</div>
+            </div>
+            <button class="btn btn-primary">Acompanhar Progresso</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>&copy; 2024 Finans. Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
